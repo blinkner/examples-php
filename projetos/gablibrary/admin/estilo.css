@@ -1,0 +1,114 @@
+/* Tabela */
+table {
+	width: 100%;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+th {
+	background: #333;
+	color:#E8E8E8;
+}
+td {
+	font-size: 13px;
+	border-bottom: 1px #333 solid;
+}
+th, td {
+	padding: 10px;
+}
+td:last-child{
+	padding: 0px;
+	text-align: center;
+}
+
+/* Botões */
+button.btnEdit {
+	background:    #5bc0de;
+	background:    -webkit-linear-gradient(#5bc0de, #46b8da);
+	background:    linear-gradient(#5bc0de, #46b8da);
+	border:        1px solid #46b8da;
+	border-radius: 5px;
+	padding:       5px 10px;
+	color:         #ffffff;
+	display:       inline-block;
+	text-align:    center;
+	text-shadow:   none;
+}
+button.btnEdit:hover {
+	background:    #46b8da;
+	background:    -webkit-linear-gradient(#46b8da, #31b0d5);
+	background:    linear-gradient(#46b8da, #31b0d5);
+	border:        1px solid #46b8da;
+}
+button.btnDelete {
+	background:    #d9534f;
+	background:    -webkit-linear-gradient(#d9534f, #d43f3a);
+	background:    linear-gradient(#d9534f, #d43f3a);
+	border:        1px solid #d43f3a;
+	border-radius: 5px;
+	padding:       5px 10px;
+	color:         #ffffff;
+	display:       inline-block;
+	text-align:    center;
+	text-shadow:   none;
+}
+button.btnDelete:hover {
+	background:    #c9302c;
+	background:    -webkit-linear-gradient(#c9302c, #ac2925);
+	background:    linear-gradient(#c9302c, #ac2925);
+	border:        1px solid #ac2925;
+}
+
+/* Fundos */
+div.col12.titulo {
+	width: 940px;
+	margin-left: 0px;
+}
+div.col12.produto {
+	width: 940px;
+	margin-left: 0px;
+	color: #333;
+}
+
+/* Formulário de Cadastro */
+div.area {
+	display: inline-block;
+	padding: 10px;
+	border: thin dotted #000;
+	width: auto;
+}
+label, input, textarea, select {
+	display: block;
+}
+input, select, textarea {
+	padding: 5px 10px;
+	resize: none;
+}
+
+/* Diferenças de tamanhos */
+div.UmDeTres {
+	width: 287px;
+}
+div.UmDeTres input {
+	width: 267px;
+}
+div.UmDeTres select {
+	width: 291px;
+}
+
+div.UmDeDois {
+	width: 444px;
+}
+div.UmDeDois input, div.UmDeDois textarea {
+	width: 424px;
+}
+div.UmDeDois input.marker {
+	display: inline-block;
+	width: 15px;
+}
+
+div.UmDeUm {
+	width: 915px;
+}
+div.UmDeUm input, div.UmDeUm textarea {
+	width: 895px;
+}

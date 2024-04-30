@@ -1,0 +1,19 @@
+.card-info {
+	position: absolute;
+	width: 100%;
+	padding: 10px;
+	background: rgba(0,0,0,0.5);
+	color: white;
+	text-align: center;
+	opacity: 0;
+	transition: 0.8s ease;
+}
+.card-info-up {
+	top: 0;
+}
+.card-info-down {
+	bottom: 0;
+}
+.card:hover .card-info {
+	opacity: 1;
+}
