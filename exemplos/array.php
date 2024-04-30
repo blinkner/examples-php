@@ -5,7 +5,6 @@ $variavel = array("A"=>"ACABAXI","b"=>"BOLA","C"=>"CACHORRO");
 
 #print_r($variavel);
 #echo $variavel["B"];
-foreach($variavel as $v)
-{
+foreach($variavel as $v) {
 	echo $v;
 }
