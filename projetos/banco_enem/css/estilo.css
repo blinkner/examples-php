@@ -1,0 +1,83 @@
+body {
+    font-family: Arial, Helvetica;
+    font-size: 14px;
+    margin: 5px;
+}
+main {
+    display: flex;
+    flex-direction: row;
+}
+#navegacao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 0 1 200px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+#principal, #perguntas, #disciplina {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 500px;
+    flex-wrap: wrap;
+    padding: 20px;
+    background-color: #eee;
+}
+.bloco-perguntas {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: space-evenly;
+}
+.bloco-perguntas a {
+    flex: 0 0 3em;
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+}
+.bloco-perguntas a:hover, nav a:hover {
+   background-color: #000;
+   color: #eee;
+}
+.card-pergunta {
+    padding: 5px;
+    border: 1px solid #000;
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+h1, h2 {
+    font-size: 2em;
+    margin: 0 0 10px 0;
+}
+.titulo {
+    display: flex;
+    justify-content: center;
+}
+nav a {
+    height: auto;
+    width: 100%;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    border: 1px #eee solid;
+    padding: 5px;
+    color: #000;
+}
+input, button {
+    margin-top: 10px;
+}
+p {
+    text-align: justify;
+}
+.opcao {
+    border-radius: 10px;
+    padding: 5px;
+}
+img {
+    max-height: 400px;
+    width: auto;
+    margin: auto;
+}
