@@ -5,7 +5,8 @@ RewriteCond %{REQUEST_FILENAME} !-d
 
 RewriteCond %{REQUEST_FILENAME} !-f
 
-RewriteBase /eventos/
+# Caso seja uma subpágina use: RewriteBase /subpagina/
+RewriteBase /
 
 # Definindo página padrão
 DirectoryIndex index.php
