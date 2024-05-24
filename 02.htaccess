@@ -1,0 +1,36 @@
+# Ativar o módulo Rewrite, que realiza a reescrita de URLs.
+RewriteEngine On
+
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteCond %{REQUEST_FILENAME} !-f
+
+RewriteBase /eventos/
+
+# Definindo página padrão
+DirectoryIndex index.php
+
+# URL amigáveis
+RewriteRule ^([a-z_-]+)$ index.php?slug1=$1 [QSA,NC,L]
+RewriteRule ^([a-z_-]+)\/([a-z0-9_-]+)$ index.php?slug1=$1&slug2=$2 [QSA,NC,L]
+RewriteRule ^([a-z_-]+)\/([a-z_-]+)\/([a-z0-9_-]+)$ index.php?slug1=$1&slug2=$2&slug3=$3 [QSA,NC,L]
+
+# Página de erro
+ErrorDocument 404 /error/404.html
+
+#Cache no navegador
+#ExpiresActive On
+#ExpiresByType image/jpg "access 1 year"
+#ExpiresByType image/jpeg "access 1 year"
+#ExpiresByType image/gif "access 1 year"
+#ExpiresByType image/png "access 1 year"
+#ExpiresByType image/webp "access 1 year"
+#ExpiresByType text/css "access 1 month"
+#ExpiresByType application/pdf "access 1 month"
+#ExpiresByType text/x-javascript "access 1 month"
+#ExpiresByType application/x-shockwave-flash "access 1 month"
+#ExpiresByType image/x-icon "access 1 year"
+#ExpiresDefault "access 2 days"
+
+
+Options -Indexes
