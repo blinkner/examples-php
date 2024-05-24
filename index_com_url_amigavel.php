@@ -27,7 +27,7 @@ if (file_exists("views/{$slug1}.php")) {
             include_once "views/{$slug1}.php";
             break;
         //default:
-        //    $pagina_titulo = "Eventos";
+        //    $pagina_titulo = "";
         //    $pagina_descricao = "";
         //    $pagina_palavras_chave = "";
         //    include_once 'views/header.php';
