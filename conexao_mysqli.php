@@ -1,10 +1,10 @@
 <?php
 	// use mysqli;
 
-	define("SERVER_DB", "");
-	define("USER_DB", "");
-	define("PASS_DB", "");
-	define("DATABASE_DB", "");
+	define("SERVER_DB", ""); // localhost
+	define("USER_DB", ""); // Usuário do banco de dados
+	define("PASS_DB", ""); // Senha do banco de dados
+	define("DATABASE_DB", ""); // Nome do banco de dados
 
 	// Mensagens de erro
 	$msg[0] = "Conexão com o banco falhou!";
