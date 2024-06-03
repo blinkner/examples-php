@@ -1,4 +1,4 @@
-function slugify($nome) {
+function slugify($nome):string {
     $slug = $nome;
     $slug = trim($slug);
     $slug = str_replace("- ", "", $slug);
@@ -10,6 +10,8 @@ function slugify($nome) {
     $slug = str_replace("À", "A", $slug);
     $slug = str_replace("ã", "a", $slug);
     $slug = str_replace("Ã", "A", $slug);
+    $slug = str_replace("â", "a", $slug);
+    $slug = str_replace("Â", "A", $slug);
     $slug = str_replace("é", "e", $slug);
     $slug = str_replace("É", "E", $slug);
     $slug = str_replace("í", "i", $slug);
