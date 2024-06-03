@@ -16,6 +16,8 @@ function slugify($nome) {
     $slug = str_replace("Í", "I", $slug);
     $slug = str_replace("õ", "o", $slug);
     $slug = str_replace("Õ", "O", $slug);
+    $slug = str_replace("ô", "o", $slug);
+    $slug = str_replace("Ô", "O", $slug);
     $slug = str_replace("ó", "o", $slug);
     $slug = str_replace("Ó", "O", $slug);
     $slug = str_replace("ú", "u", $slug);
