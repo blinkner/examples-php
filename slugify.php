@@ -14,6 +14,7 @@ function slugify($nome):string {
     $slug = str_replace("Â", "A", $slug);
     $slug = str_replace("é", "e", $slug);
     $slug = str_replace("É", "E", $slug);
+    $slug = str_replace("&", "e", $slug);
     $slug = str_replace("í", "i", $slug);
     $slug = str_replace("Í", "I", $slug);
     $slug = str_replace("õ", "o", $slug);
