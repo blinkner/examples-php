@@ -1,11 +1,9 @@
 <!-- Formulário HTML para upload de arquivo -->
-<html>
 <form enctype="multipart/form-data" action="" method="post">
     <input type="hidden" name="MAX_FILE_SIZE" value="9000000" />
     <input type="file" name="input_file" accept="image/jpg, image/jpeg, image/png, image/webp">
     <input type="submit" name="upload" value="upload">
 </form>
-</html>
 
 <?php
     // Código PHP para upload no servidor
