@@ -1,6 +1,6 @@
-<?php ou <?=	// Tags válidas.
+<?php ou <?=    // Tags válidas.
 
-UTF-8			// Codificação.
+UTF-8    // Codificação.
 
 Não declarar classes, funções e constantes no mesmo documento que echo/include.
 
