@@ -1,6 +1,6 @@
 <?php
 
-$bibliografia = array('php.net', 'Aprendendo PHP', 'PHP Moderno', 'Programming PHP', 'Learn PHP 8', 'PHP 8 Quick Scripting Reference', 'PHP & MYSQL')
+$bibliografia = array('php.net', 'Aprendendo PHP', 'PHP Moderno', 'Programming PHP', 'Learn PHP 8', 'PHP 8 Quick Scripting Reference', 'PHP & MYSQL');
 $sequencias_de_escape = array("\"", "\'", "\n", "\t", "\\", "\$", "\u{}");
 $operadores = array('+', '-', '*', '/', '**', '%', '.');
 
