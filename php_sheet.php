@@ -43,16 +43,16 @@ base_convert(11, 2, 10); // 3
 ceil(8.6); // 9
 floor(8.6); // 8
 round(8.6); // 9
-hypot();
+hypot($x, $y);
 intdiv(5,2); // Divisão inteira: 2
 fmod(5,2); // Resto da divisão em float: 1,0
 min(2,5,3,7); // 2
 max(2,5,3,7); // 7
 pi(); // 3,14...
-pow(3,2) // 9
-sin();
-cos();
-tan();
+pow(3,2); // 9
+sin($num);
+cos($num);
+tan($num);
 sqrt(81); // 9
 rand(0,100); // 57
 mt_rand(0,100); // 35
@@ -81,8 +81,6 @@ $_SERVER;
 $_SERVER['PHP_SELF']; // Próprio arquivo
 $GLOBALS;
 
-if (condicao) {bloco}
-for ($i = 0, $i < 10, $i++) {bloco}
-while (true) {bloco}
-
-?>
+if ($condicao) {echo 'bloco';}
+for ($i = 0; $i < 10; $i++) {echo 'bloco';}
+while (true) {echo 'bloco';}
