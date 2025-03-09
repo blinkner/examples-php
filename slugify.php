@@ -1,3 +1,4 @@
+<?php
 function slugify($nome):string {
     $slug = $nome;
     $slug = trim($slug);
