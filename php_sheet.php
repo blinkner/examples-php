@@ -1,5 +1,4 @@
 <?php
-
 $bibliografia = array('php.net', 'Aprendendo PHP', 'PHP Moderno', 'Programming PHP', 'Learn PHP 8', 'PHP 8 Quick Scripting Reference', 'PHP & MYSQL');
 $sequencias_de_escape = array("\"", "\'", "\n", "\t", "\\", "\$", "\u{}");
 $operadores = array('+', '-', '*', '/', '**', '%', '.');
@@ -93,7 +92,7 @@ $_SESSION['usuario'] = 'Gabriel';
 $hexadecimal = 0x23;
 $binario = 0b11;
 $octal = 023;
-$exponencial = 3e2 // 3 x 10^(2)
+$exponencial = 3e2; // 3 x 10^(2)
 
 if ($condicao) {echo 'bloco';}
 for ($i = 0; $i < 10; $i++) {echo 'bloco';}
