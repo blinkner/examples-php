@@ -1,5 +1,4 @@
 <?php
-
 class Pessoa
 {
     // public, private, protected.

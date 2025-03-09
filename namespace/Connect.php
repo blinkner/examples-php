@@ -1,8 +1,6 @@
 <?php
-
 namespace ConectarBanco;	// Namespace.
 
-function conectar()
-{
+function conectar() {
 	echo "conectou no banco!";
 }
