@@ -63,6 +63,10 @@ number_format(5.834, 2, ",", "."); // 5,83
 $padrao = numfmt_create("pt-BR", NumberFormatter::CURRENCY);
 numfmt_format_currency($padrao, 50, "BRL"); // R$ 50,00
 
+// Datas
+date_default_timezone_set("America/Sao_Paulo");
+date("d/M/Y G:i:s");
+
 // Coerção
 $int = (int) '10'; // 10
 $float = (float) '25'; // 25.0
@@ -74,12 +78,22 @@ $_POST['nome'] = 'Gabriel';
 $_GET['idade'] = 23;
 $_REQUEST['cidade'] = 'Divinópolis';
 setcookie('mensagem', 'Eu amo PHP', time() + 30);
-$_COOKIES['mensagem'] = 'Eu amo PHP';
+$_COOKIE['mensagem'] = 'Eu amo PHP';
 $_FILES;
 $_ENV;
 $_SERVER;
 $_SERVER['PHP_SELF']; // Próprio arquivo
 $GLOBALS;
+
+// Sessão
+session_start();
+$_SESSION['usuario'] = 'Gabriel';
+
+// Tipos primitivos
+$hexadecimal = 0x23;
+$binario = 0b11;
+$octal = 023;
+$exponencial = 3e2 // 3 x 10^(2)
 
 if ($condicao) {echo 'bloco';}
 for ($i = 0; $i < 10; $i++) {echo 'bloco';}
