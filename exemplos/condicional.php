@@ -3,11 +3,8 @@
 $A = 5;
 $B = 2;
 
-if($A % 2 == 1)
-{
+if($A % 2 == 1) {
 	echo "Número impar";
-}
-else
-{
+} else {
 	echo "Número par";
 }
