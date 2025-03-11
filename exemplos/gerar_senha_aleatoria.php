@@ -12,3 +12,5 @@ $senha .= str_shuffle($numeros);
 $senha .= str_shuffle($simbolos);
 
 $senha = substr(str_shuffle($senha), 0, $tamanho);
+
+echo $senha;
