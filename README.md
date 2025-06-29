@@ -32,4 +32,4 @@ Exemplos e projetos simples realizados em PHP.
 - Utilizar `elseif` ao invés de `else if`.
 - Case indentada em relação a switch.
 - Break indentado em relação ao case.
-- Utilizar comentário "// no break" caso não use um.
+- Utilizar comentário `// no break` caso não use um.
