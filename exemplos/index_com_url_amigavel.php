@@ -1,41 +1,27 @@
 <?php
+// Modularização com URL amigável
+// Desenvolvido por: blinkner
 
 $slug1 = isset($_GET['slug1']) ? $_GET['slug1'] : 'home';
 $slug2 = $_GET['slug2'] ?? '';
 $slug3 = $_GET['slug3'] ?? '';
 
-$pagina_titulo = "";
-$pagina_descricao = "";
-$pagina_palavras_chave = "";
-$meta_extra = "";
+$pagina_dados = array("titulo" => "", "descricao" => "", "palavras-chave" => "", "meta-extra" => "");
+
+include_once 'views/header.php';
 
 if (file_exists("views/{$slug1}.php")) {
     switch ($slug1) {
-        case 'slug-pagina':
-            $pagina_titulo = "Título da página";
-            $pagina_descricao = "";
-            $pagina_palavras_chave = "";
-            $meta_extra = "";
-            include_once 'views/header.php';
-            include_once "views/{$slug1}.php";
-            break;
         case 'home':
-            $pagina_titulo = "Página inicial";
-            $pagina_descricao = "";
-            $pagina_palavras_chave = "";
-            include_once 'views/header.php';
+            $pagina_dados["titulo"] = "Página inicial";
             include_once "views/{$slug1}.php";
             break;
-        //default:
-        //    $pagina_titulo = "";
-        //    $pagina_descricao = "";
-        //    $pagina_palavras_chave = "";
-        //    include_once 'views/header.php';
-        //    include_once "views/{$slug1}.php";
-        //    break;
+        default:
+            $pagina_dados["titulo"] = "Página padrão";
+            include_once "views/{$slug1}.php";
+            break;
     }
 } else {
-    include_once 'views/header.php';
     include_once 'error/404.php';
 }
 

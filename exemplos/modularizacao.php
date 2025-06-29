@@ -1,10 +1,10 @@
 <?php
-// Modularização de páginas
+// Modularização de páginas padrão
 // Desenvolvido por: blinkner
 
 $pagina = 'home'; // Define a página atual pela URL
 
-if(isset($_GET['pagina'])){
+if (isset($_GET['pagina'])) {
     $pagina = $_GET['pagina'];
 }
 

@@ -2,7 +2,7 @@
 require "Pessoa.php";
 require "Programador.php";
 
-$programador = new Programador("Gabriel", "PHP");
+$programador = new Programador("Blinkner", "PHP");
 
 var_dump($programador);	// Imprime saídas da classe.
 

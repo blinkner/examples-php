@@ -1,5 +1,5 @@
 <?php
-class Programador extends Pessoa    // Herança
+class Programador extends Pessoa // Herança
 {
     public $linguagem;
 
