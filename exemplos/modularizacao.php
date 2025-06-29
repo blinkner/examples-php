@@ -1,25 +1,23 @@
 <?php
-#INDEX.PHP
-/* Define a página atual pela URL */
-$pagina = 'home';
- 
+// Modularização de páginas
+// Desenvolvido por: blinkner
+
+$pagina = 'home'; // Define a página atual pela URL
+
 if(isset($_GET['pagina'])){
     $pagina = $_GET['pagina'];
 }
+
+include 'header.php'; // Carrega o header.php
  
-/* Carrega o header.php */
-include 'header.php';
- 
-/* Carrega a página escolhida pelo usuário */
+// Carrega a página escolhida pelo usuário
 switch ($pagina) {
-    case 'equipe':
-        include 'equipe.php';
+    case 'contato':
+        include 'contato.php';
         break;
- 
     default:
-        include 'app/views/home.php';
+        include 'home.php';
         break;
 }
- 
-/* Carrega o footer.php */
-include 'footer.php';
+
+include 'footer.php'; // Carrega o footer.php

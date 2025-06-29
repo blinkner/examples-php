@@ -94,6 +94,29 @@ $binario = 0b11;
 $octal = 023;
 $exponencial = 3e2; // 3 x 10^(2)
 
-if ($condicao) {echo 'bloco';}
+// Constantes mágicas
+__LINE__; // Retorna o número da linha do script na qual ela foi declarada.
+__FILE__; // Retorna o caminho do arquivo PHP.
+__DIR__; // Retorna o diretório.
+__FUNCTION__; // Retorna a function a qual foi declarada.
+__CLASS__; // Retorna a class a qual foi declarada.
+__METHOD__; // Retorna a classe e o método a qual foi declarada.
+__NAMESPACE__; // Retona o namespace a qual foi declarada.
+
+// Estrutura condicional
+if (5 % 2 == 1) {echo 'ímpar';} else {echo 'par';}
+
+// Estruturas de repetição
 for ($i = 0; $i < 10; $i++) {echo 'bloco';}
+foreach ($variavel as $key => $valor) {echo $key, ': ', $valor;}
 while (true) {echo 'bloco';}
+do {echo 'bloco';} while (true);
+
+// Padrão de exceções
+try {
+	// try body
+} catch (FirstExceptionType $e) {
+	// catch body
+} catch (OtherExceptionType $e) {
+	// catch body
+}

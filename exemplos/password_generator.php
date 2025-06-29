@@ -1,5 +1,7 @@
 <?php
 // Gerar senha aleatória com 8 caracteres
+// Desenvolvido por: blinkner
+
 $maiusculas = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
 $minusculas = 'abcdefghijklmnopqrstuvwxyz';
 $numeros = '0123456789';
