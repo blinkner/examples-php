@@ -1,6 +1,9 @@
 # Arquivos de PHP
 Exemplos e projetos simples realizados em PHP.
 
+Para iniciar um servidor PHP local:
+`php -S localhost:8000`
+
 ## Boas práticas
 - Tágs válidas: `<?php` ou `<?=`
 - Codificação: UTF-8
